@@ -1,0 +1,8 @@
+name: Godlike V2.0
+main: me.marcoboekholt.godlike.Main
+version: 1.0
+author: Marco Boekholt
+
+commands:
+  godlike:
+     description: godlike command
