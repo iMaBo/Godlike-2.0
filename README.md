@@ -15,4 +15,4 @@ This is how you can help us to fix bugs and other fails in the plugin.
 
 Team
 ===========
-**Lead developer** [MarcoBoekholt]
+**Lead developer** [MarcoBoekholt](https://github.com/MarcoBoekholt)
