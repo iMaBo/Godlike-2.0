@@ -1,6 +1,7 @@
 package me.marcoboekholt.godlike.commands;
 
 import me.marcoboekholt.godlike.data.data;
+import me.marcoboekholt.godlike.data.items;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -13,6 +14,7 @@ public class commands implements CommandExecutor{
 	public boolean onCommand(CommandSender sender, Command cmd, String label,
 			String[] args) {
 		data dataobj = new data();
+		items itemobj = new items();
 		if (sender instanceof Player) {
 			Player p = (Player) sender;
 			if (p.isOp() || p.hasPermission("Godlike.help")) {
@@ -20,9 +22,11 @@ public class commands implements CommandExecutor{
 					if (args.length == 0) {
 						p.sendMessage(data.Help);
 						p.sendMessage(data.Commands);
+						return true;
 					} else if (args[0].equalsIgnoreCase("sword")) {
-						dataobj.setItemName("sword");
-						dataobj.printItemMessage();
+						itemobj.sword(p, p.getName());
+						dataobj.setItemName(args[0]);
+						p.sendMessage(dataobj.getItemName());
 					}
 				}
 			} else {
