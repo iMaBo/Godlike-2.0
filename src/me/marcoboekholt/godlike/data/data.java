@@ -14,18 +14,17 @@ public class data {
 	
 	public static String noPlayer = ChatColor.RED + "You must be a player to do this.";
 	
-	public static String noPermissions = ChatColor.RED + "You do not have the permission to use this command.";
+	public static String noPermissions = ChatColor.RED + "You do not have the permission to use this command.";	
+	
 	
 	private String itemname;
 	public void setItemName(String name) {
-		itemname = name;
+		itemname=name;
 	}
 	
 	public String getItemName() {
-		return itemname;
+		String messageItem = ChatColor.DARK_GRAY + "[" + ChatColor.GOLD + "X" + ChatColor.DARK_GRAY + "]" + ChatColor.GOLD + " You`ve got a " + itemname.toLowerCase();
+		return messageItem;
 	}
 	
-	public void printItemMessage() {
-		String sendi = ChatColor.DARK_GRAY + "[" + ChatColor.GOLD + "*" + ChatColor.DARK_GRAY + "]" + ChatColor.GOLD + " You`ve got a " + itemname;
-	}
 }
