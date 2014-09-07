@@ -129,6 +129,67 @@ public class items {
 	}
 
 	public void armor(Player p, String pname) {
-
+		ItemStack helmet = new ItemStack(Material.DIAMOND_HELMET, 1);
+		ItemMeta helmetmeta = helmet.getItemMeta();
+		helmetmeta.setDisplayName(ChatColor.GREEN + pname + "`s" + ChatColor.DARK_GRAY + " helmet");
+		ArrayList<String> hlo = new ArrayList<String>();
+		hlo.add(ChatColor.DARK_PURPLE + "Godlike helmet");
+		hlo.add("");
+		hlo.add(ChatColor.GOLD + "Soulbound");
+		helmetmeta.setLore(hlo);
+		helmet.setItemMeta(helmetmeta);
+		helmet.addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 4);
+		helmet.addEnchantment(Enchantment.PROTECTION_FIRE, 4);
+		helmet.addEnchantment(Enchantment.PROTECTION_EXPLOSIONS, 4);
+		helmet.addEnchantment(Enchantment.PROTECTION_PROJECTILE, 4);
+		helmet.addEnchantment(Enchantment.THORNS, 3);
+		helmet.addEnchantment(Enchantment.OXYGEN, 3);
+		helmet.addEnchantment(Enchantment.WATER_WORKER, 1);
+		
+		ItemStack body = new ItemStack(Material.DIAMOND_CHESTPLATE, 1);
+		ItemMeta bodymeta = body.getItemMeta();
+		bodymeta.setDisplayName(ChatColor.GREEN + pname + "`s" + ChatColor.DARK_GRAY + " chestplate");
+		ArrayList<String> blo = new ArrayList<String>();
+		blo.add(ChatColor.DARK_PURPLE + "Godlike chestplate");
+		blo.add("");
+		blo.add(ChatColor.GOLD + "Soulbound");
+		bodymeta.setLore(blo);
+		body.setItemMeta(bodymeta);
+		body.addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 4);
+		body.addEnchantment(Enchantment.PROTECTION_FIRE, 4);
+		body.addEnchantment(Enchantment.PROTECTION_EXPLOSIONS, 4);
+		body.addEnchantment(Enchantment.PROTECTION_PROJECTILE, 4);
+		body.addEnchantment(Enchantment.THORNS, 3);
+		
+		ItemStack legs = new ItemStack(Material.DIAMOND_LEGGINGS, 1);
+		ItemMeta legsmeta = legs.getItemMeta();
+		legsmeta.setDisplayName(ChatColor.GREEN + pname + "`s" + ChatColor.DARK_GRAY + " leggings");
+		ArrayList<String> llo = new ArrayList<String>();
+		llo.add(ChatColor.DARK_PURPLE + "Godlike leggings");
+		llo.add("");
+		llo.add(ChatColor.GOLD + "Soulbound");
+		legsmeta.setLore(llo);
+		legs.setItemMeta(legsmeta);
+		legs.addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 4);
+		legs.addEnchantment(Enchantment.PROTECTION_FIRE, 4);
+		legs.addEnchantment(Enchantment.PROTECTION_EXPLOSIONS, 4);
+		legs.addEnchantment(Enchantment.PROTECTION_PROJECTILE, 4);
+		legs.addEnchantment(Enchantment.THORNS, 3);
+		
+		ItemStack boots = new ItemStack(Material.DIAMOND_BOOTS, 1);
+		ItemMeta bootsmeta = boots.getItemMeta();
+		bootsmeta.setDisplayName(ChatColor.GREEN + pname + "`s" + ChatColor.DARK_GRAY + " boots");
+		ArrayList<String> blo1 = new ArrayList<String>();
+		blo1.add(ChatColor.DARK_PURPLE + "Godlike boots");
+		blo1.add("");
+		blo1.add(ChatColor.GOLD + "Soulbound");
+		bootsmeta.setLore(blo1);
+		boots.setItemMeta(bootsmeta);
+		boots.addEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 4);
+		boots.addEnchantment(Enchantment.PROTECTION_FIRE, 4);
+		boots.addEnchantment(Enchantment.PROTECTION_EXPLOSIONS, 4);
+		boots.addEnchantment(Enchantment.PROTECTION_PROJECTILE, 4);
+		boots.addEnchantment(Enchantment.THORNS, 3);
 	}
+	
 }
