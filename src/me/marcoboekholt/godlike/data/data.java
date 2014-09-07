@@ -43,5 +43,17 @@ public class data {
 				+ " You`ve got the " + Toolsname.toLowerCase();
 		return messageItem;
 	}
+	
+	private String Fishingname;
+	public void setFishingName(String name) {
+		Fishingname = name;
+	}
+	
+	public String getFishingName() {
+		String messageFish = ChatColor.DARK_GRAY + "[" + ChatColor.GOLD + "X"
+				+ ChatColor.DARK_GRAY + "]" + ChatColor.GOLD
+				+ " You`ve got the " + Toolsname.toLowerCase() + " rod";
+		return messageFish;
+	}
 
 }
