@@ -28,12 +28,16 @@ public class commands implements CommandExecutor {
 							itemobj.sword(p, p.getName());
 							dataobj.setItemName(args[0]);
 							p.sendMessage(dataobj.getItemName());
+						} else {
+							p.sendMessage(data.noPermissions);
 						}
 					} else if (args[0].equalsIgnoreCase("tools")) {
 						if (p.hasPermission("Godlike.tools")) {
 							itemobj.tools(p, p.getName());
 							dataobj.setToolsName(args[0]);
 							p.sendMessage(dataobj.getToolsName());
+						} else {
+							p.sendMessage(data.noPermissions);
 						}
 					} else if (args[0].equalsIgnoreCase("bow")) {
 						if (p.hasPermission("Godlike.bow")) {
@@ -41,17 +45,21 @@ public class commands implements CommandExecutor {
 							dataobj.setItemName(args[0]);
 							p.sendMessage(dataobj.getItemName()
 									+ " with arrows");
+						} else {
+							p.sendMessage(data.noPermissions);
 						}
 					} else if (args[0].equalsIgnoreCase("armor")) {
 						if (p.hasPermission("Godlike.armor")) {
 							itemobj.armor(p, p.getName());
 							dataobj.setToolsName(args[0]);
 							p.sendMessage(dataobj.getToolsName());
+						} else {
+							p.sendMessage(data.noPermissions);
 						}
 					}
 				}
 			} else {
-				sender.sendMessage(data.noPermissions);
+				p.sendMessage(data.noPermissions);
 			}
 		} else {
 			sender.sendMessage(data.noPlayer);
