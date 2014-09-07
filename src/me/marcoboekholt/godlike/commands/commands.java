@@ -8,7 +8,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class commands implements CommandExecutor{
+public class commands implements CommandExecutor {
 
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label,
@@ -24,21 +24,30 @@ public class commands implements CommandExecutor{
 						p.sendMessage(data.Commands);
 						return true;
 					} else if (args[0].equalsIgnoreCase("sword")) {
-						itemobj.sword(p, p.getName());
-						dataobj.setItemName(args[0]);
-						p.sendMessage(dataobj.getItemName());
+						if (p.hasPermission("Godlike.sword")) {
+							itemobj.sword(p, p.getName());
+							dataobj.setItemName(args[0]);
+							p.sendMessage(dataobj.getItemName());
+						}
 					} else if (args[0].equalsIgnoreCase("tools")) {
-						itemobj.tools(p, p.getName());
-						dataobj.setToolsName(args[0]);
-						p.sendMessage(dataobj.getToolsName());
+						if (p.hasPermission("Godlike.tools")) {
+							itemobj.tools(p, p.getName());
+							dataobj.setToolsName(args[0]);
+							p.sendMessage(dataobj.getToolsName());
+						}
 					} else if (args[0].equalsIgnoreCase("bow")) {
-						itemobj.bow(p, p.getName());
-						dataobj.setItemName(args[0]);
-						p.sendMessage(dataobj.getItemName() + " with arrows");
+						if (p.hasPermission("Godlike.bow")) {
+							itemobj.bow(p, p.getName());
+							dataobj.setItemName(args[0]);
+							p.sendMessage(dataobj.getItemName()
+									+ " with arrows");
+						}
 					} else if (args[0].equalsIgnoreCase("armor")) {
-						itemobj.armor(p, p.getName());
-						dataobj.setToolsName(args[0]);
-						p.sendMessage(dataobj.getToolsName());
+						if (p.hasPermission("Godlike.armor")) {
+							itemobj.armor(p, p.getName());
+							dataobj.setToolsName(args[0]);
+							p.sendMessage(dataobj.getToolsName());
+						}
 					}
 				}
 			} else {
