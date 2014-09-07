@@ -121,4 +121,7 @@ public class items {
 		pl.setItem(9, arrow);
 	}
 
+	public void armor(Player p, String pname) {
+		
+	}
 }

@@ -33,7 +33,7 @@ public class data {
 	}
 	
 	public String getToolsName() {
-		String messageItem = ChatColor.DARK_GRAY + "[" + ChatColor.GOLD + "X" + ChatColor.DARK_GRAY + "]" + ChatColor.GOLD + " You`ve got some " + Toolsname.toLowerCase();
+		String messageItem = ChatColor.DARK_GRAY + "[" + ChatColor.GOLD + "X" + ChatColor.DARK_GRAY + "]" + ChatColor.GOLD + " You`ve got the " + Toolsname.toLowerCase();
 		return messageItem;
 	}
 	
