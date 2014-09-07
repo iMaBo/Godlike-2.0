@@ -190,6 +190,12 @@ public class items {
 		boots.addEnchantment(Enchantment.PROTECTION_EXPLOSIONS, 4);
 		boots.addEnchantment(Enchantment.PROTECTION_PROJECTILE, 4);
 		boots.addEnchantment(Enchantment.THORNS, 3);
+		
+		PlayerInventory pl = p.getInventory();
+		pl.addItem(helmet);
+		pl.addItem(body);
+		pl.addItem(legs);
+		pl.addItem(boots);
 	}
 	
 }
