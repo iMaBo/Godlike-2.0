@@ -19,7 +19,7 @@ public class items {
 		ArrayList<String> sl = new ArrayList<String>();
 		sl.add(ChatColor.DARK_PURPLE + "Godlike sword");
 		sl.add("");
-		sl.add(ChatColor.YELLOW + "Soulbound");
+		sl.add(ChatColor.GOLD + "Soulbound");
 		swordmeta.setLore(sl);
 		swordi.setItemMeta(swordmeta);
 		swordi.addEnchantment(Enchantment.KNOCKBACK, 2);
@@ -36,7 +36,7 @@ public class items {
 		ArrayList<String> plo = new ArrayList<String>();
 		plo.add(ChatColor.DARK_PURPLE + "Godlike pickaxe");
 		plo.add("");
-		plo.add(ChatColor.YELLOW + "Soulbound");
+		plo.add(ChatColor.GOLD + "Soulbound");
 		pickmeta.setLore(plo);
 		pickaxe.setItemMeta(pickmeta);
 		pickaxe.addEnchantment(Enchantment.DIG_SPEED, 5);
@@ -50,7 +50,7 @@ public class items {
 		ArrayList<String> xlo = new ArrayList<String>();
 		xlo.add(ChatColor.DARK_PURPLE + "Godlike axe");
 		xlo.add("");
-		xlo.add(ChatColor.YELLOW + "Soulbound");
+		xlo.add(ChatColor.GOLD + "Soulbound");
 		axemeta.setLore(xlo);
 		axe.setItemMeta(axemeta);
 		axe.addEnchantment(Enchantment.DIG_SPEED, 5);
@@ -64,7 +64,7 @@ public class items {
 		ArrayList<String> slo = new ArrayList<String>();
 		slo.add(ChatColor.DARK_PURPLE + "Godlike spade");
 		slo.add("");
-		slo.add(ChatColor.YELLOW + "Soulbound");
+		slo.add(ChatColor.GOLD + "Soulbound");
 		spademeta.setLore(slo);
 		spade.setItemMeta(spademeta);
 		spade.addEnchantment(Enchantment.DIG_SPEED, 5);
@@ -78,7 +78,7 @@ public class items {
 		ArrayList<String> hlo = new ArrayList<String>();
 		hlo.add(ChatColor.DARK_PURPLE + "Godlike hoe");
 		hlo.add("");
-		hlo.add(ChatColor.YELLOW + "Soulbound");
+		hlo.add(ChatColor.GOLD + "Soulbound");
 		hoemeta.setLore(hlo);
 		hoe.setItemMeta(hoemeta);
 		hoe.addEnchantment(Enchantment.DURABILITY, 3);
@@ -97,7 +97,7 @@ public class items {
 		ArrayList<String> blo = new ArrayList<String>();
 		blo.add(ChatColor.DARK_PURPLE + "Godlike bow");
 		blo.add("");
-		blo.add(ChatColor.YELLOW + "Soulbound");
+		blo.add(ChatColor.GOLD + "Soulbound");
 		bowmeta.setLore(blo);
 		bow.setItemMeta(bowmeta);
 		bow.addEnchantment(Enchantment.ARROW_DAMAGE, 5);
@@ -112,7 +112,7 @@ public class items {
 		ArrayList<String> alo = new ArrayList<String>();
 		alo.add(ChatColor.DARK_PURPLE + "Godlike arrow");
 		alo.add("");
-		alo.add(ChatColor.YELLOW + "Soulbound");
+		alo.add(ChatColor.GOLD + "Soulbound");
 		arrowmeta.setLore(alo);
 		arrow.setItemMeta(arrowmeta);
 		
