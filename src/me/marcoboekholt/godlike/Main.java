@@ -14,10 +14,11 @@ public class Main extends JavaPlugin {
 	
 	public void onEnable() {
 		getCommand("godlike").setExecutor(new commands());
+		getServer().getLogger().info("Godlike 2.0 has been enabled.");
 	}
 	
 	public void onDisable() {
-		//Some stuff here
+		getServer().getLogger().info("Godlike has been disabled.");
 	}
 
 }
