@@ -10,7 +10,7 @@ public class data {
 			+ ChatColor.GOLD + "=" + ChatColor.GRAY + "=" + ChatColor.GOLD
 			+ "=";
 	
-	public static String Commands = ChatColor.GOLD + "/godlike <sword|armor|tools|bow|fishing>";
+	public static String Commands = ChatColor.GOLD + "/godlike <sword|tools|bow|armor|fishing>";
 	
 	public static String noPlayer = ChatColor.RED + "You must be a player to do this.";
 	
@@ -24,6 +24,16 @@ public class data {
 	
 	public String getItemName() {
 		String messageItem = ChatColor.DARK_GRAY + "[" + ChatColor.GOLD + "X" + ChatColor.DARK_GRAY + "]" + ChatColor.GOLD + " You`ve got a " + itemname.toLowerCase();
+		return messageItem;
+	}
+	
+	private String Toolsname;
+	public void setToolsName(String name) {
+		Toolsname=name;
+	}
+	
+	public String getToolsName() {
+		String messageItem = ChatColor.DARK_GRAY + "[" + ChatColor.GOLD + "X" + ChatColor.DARK_GRAY + "]" + ChatColor.GOLD + " You`ve got some " + Toolsname.toLowerCase();
 		return messageItem;
 	}
 	

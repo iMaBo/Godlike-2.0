@@ -28,5 +28,25 @@ public class items {
 		PlayerInventory pl = p.getInventory();
 		pl.addItem(swordi);
 	}
+	
+	public void tools(Player p, String pname) {
+		ItemStack pickaxe = new ItemStack(Material.DIAMOND_PICKAXE, 1);
+		ItemMeta pickmeta = pickaxe.getItemMeta();
+		pickmeta.setDisplayName(ChatColor.GREEN + pname + "`s" + ChatColor.DARK_GRAY + "pickaxe");
+		ArrayList<String> plo = new ArrayList<String>();
+		plo.add(ChatColor.DARK_PURPLE + "Godlike pickaxe");
+		plo.add("");
+		plo.add(ChatColor.YELLOW + "Soulbound");
+		pickmeta.setLore(plo);
+		pickaxe.setItemMeta(pickmeta);
+				
+		
+		
+		
+		
+		PlayerInventory pl = p.getInventory();
+		pl.addItem(pickaxe);
+		
+	}
 
 }

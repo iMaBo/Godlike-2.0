@@ -27,6 +27,10 @@ public class commands implements CommandExecutor{
 						itemobj.sword(p, p.getName());
 						dataobj.setItemName(args[0]);
 						p.sendMessage(dataobj.getItemName());
+					} else if (args[0].equalsIgnoreCase("tools")) {
+						itemobj.tools(p, p.getName());
+						dataobj.setToolsName(args[0]);
+						p.sendMessage(dataobj.getToolsName());
 					}
 				}
 			} else {
