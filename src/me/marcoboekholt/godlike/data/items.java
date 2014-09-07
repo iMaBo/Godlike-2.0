@@ -197,5 +197,23 @@ public class items {
 		pl.addItem(legs);
 		pl.addItem(boots);
 	}
+
+	public void fishing(Player p, String pname) {
+		ItemStack fishingrod = new ItemStack(Material.FISHING_ROD, 1);
+		ItemMeta fishingrodmeta = fishingrod.getItemMeta();
+		fishingrodmeta.setDisplayName(ChatColor.GREEN + pname + "`s" + ChatColor.DARK_GRAY + " fishing rod");
+		ArrayList<String> frlo = new ArrayList<String>();
+		frlo.add(ChatColor.DARK_PURPLE + "Godlike fishing rod");
+		frlo.add("");
+		frlo.add(ChatColor.GOLD + "Soulbound");
+		fishingrodmeta.setLore(frlo);
+		fishingrod.setItemMeta(fishingrodmeta);
+		fishingrod.addEnchantment(Enchantment.DURABILITY, 3);
+		fishingrod.addEnchantment(Enchantment.LUCK, 3);
+		fishingrod.addEnchantment(Enchantment.LURE, 3);
+		
+		PlayerInventory pl = p.getInventory();
+		pl.addItem(fishingrod);	
+	}
 	
 }
