@@ -31,6 +31,10 @@ public class commands implements CommandExecutor{
 						itemobj.tools(p, p.getName());
 						dataobj.setToolsName(args[0]);
 						p.sendMessage(dataobj.getToolsName());
+					} else if (args[0].equalsIgnoreCase("bow")) {
+						itemobj.bow(p, p.getName());
+						dataobj.setItemName(args[0]);
+						p.sendMessage(dataobj.getItemName() + " with arrows");
 					}
 				}
 			} else {
