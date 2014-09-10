@@ -59,7 +59,7 @@ public class commands implements CommandExecutor {
 					} else if (args[0].equalsIgnoreCase("fishing")) {
 						if (p.hasPermission("Godlike.fishing")) {
 							itemobj.fishing(p, p.getName());
-;							dataobj.setFishingName(args[0]);
+							dataobj.setFishingName(args[0]);
 							p.sendMessage(dataobj.getFishingName());
 						} else {
 							p.sendMessage(data.noPermissions);

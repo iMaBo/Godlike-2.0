@@ -1,6 +1,7 @@
 package me.marcoboekholt.godlike.data;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -11,7 +12,7 @@ import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.inventory.meta.ItemMeta;
 
 public class items {
-
+		
 	public void sword(Player p, String pname) {
 		ItemStack swordi = new ItemStack(Material.DIAMOND_SWORD, 1);
 		ItemMeta swordmeta = swordi.getItemMeta();

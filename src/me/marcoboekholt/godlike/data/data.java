@@ -52,7 +52,7 @@ public class data {
 	public String getFishingName() {
 		String messageFish = ChatColor.DARK_GRAY + "[" + ChatColor.GOLD + "X"
 				+ ChatColor.DARK_GRAY + "]" + ChatColor.GOLD
-				+ " You`ve got the " + Toolsname.toLowerCase() + " rod";
+				+ " You`ve got the " + Fishingname.toLowerCase() + " rod";
 		return messageFish;
 	}
 
