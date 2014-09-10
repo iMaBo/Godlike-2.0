@@ -6,3 +6,33 @@ author: Marco Boekholt
 commands:
   godlike:
      description: godlike command
+
+permissions:
+   Godlike.*:
+     description: Gives access to all Godlike commands
+     default: op
+     children:
+       Godlike.help: true
+       Godlike.sword: true
+       Godlike.tools: true
+       Godlike.bow: true
+       Godlike.armor: true
+       Godlike.fishing: true
+   Godlike.help:
+     description: Allows you to use the help command
+     default: op
+   Godlike.sword:
+     description: Allows you to use the sword command
+     default: op
+   Godlike.tools:
+     description: Allows you to use the tools command
+     default: op
+   Godlike.bow:
+     description: Allows you to use the bow command
+     default: op
+   Godlike.armor:
+     description: Allows you to use the armor command
+     default: op
+   Godlike.fishing:
+     description: Allows you to use the fishing command
+     default: op
