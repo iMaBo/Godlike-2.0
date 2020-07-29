@@ -1,7 +1,4 @@
-Godlike V2.0 Development Readme
-===========
-The official repository at: https://github.com/marcoboekholt/Godlike-2.0
-I use Eclipse for development.
+Godlike V2.0
 
 Installation
 ===========
